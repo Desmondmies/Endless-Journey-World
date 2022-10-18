@@ -1,6 +1,6 @@
 # EndlessJourneyWorld
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+Website to blog about minecraft hardcore adventure. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Development server
 
