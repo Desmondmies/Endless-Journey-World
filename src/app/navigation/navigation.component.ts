@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Output, ViewChild} from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -16,15 +16,16 @@ export class NavigationComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
-
   @Output()
   switchThemeEvent = new EventEmitter<boolean>();
-
   currentTheme: boolean = false;
 
+  constructor(private breakpointObserver: BreakpointObserver){}
+
   switchTheme() {
-    this.currentTheme = !this.currentTheme;
-    this.switchThemeEvent.emit(this.currentTheme);
+    setTimeout( () => {
+      this.currentTheme = !this.currentTheme;
+      this.switchThemeEvent.emit(this.currentTheme);
+    }, 175);
   }
 }

@@ -10,8 +10,5 @@ export class AppComponent {
   title = 'Endless-Journey-World';
   isAlternativeTheme: boolean = false;
 
-  switchTheme(event: boolean) {
-    this.isAlternativeTheme = !this.isAlternativeTheme;
-    console.log("theme!!: " + this.isAlternativeTheme);
-  }
+  switchTheme(event: boolean) { this.isAlternativeTheme = !this.isAlternativeTheme; }
 }

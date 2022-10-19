@@ -2,8 +2,8 @@
 @include mat.core();
 
 //define light theme
-$light-primary: mat.define-palette(mat.$indigo-palette);
-$light-accent: mat.define-palette(mat.$pink-palette);
+$light-primary: mat.define-palette(mat.$cyan-palette, 700);
+$light-accent: mat.define-palette(mat.$cyan-palette);
 $light-theme: mat.define-light-theme((
   color: (
     primary: $light-primary,
@@ -12,8 +12,9 @@ $light-theme: mat.define-light-theme((
 ));
 
 //define dark theme
-$dark-primary: mat.define-palette(mat.$pink-palette);
-$dark-accent: mat.define-palette(mat.$blue-grey-palette);
+//$dark-primary: mat.define-palette(mat.$pink-palette);
+$dark-primary: mat.define-palette(mat.$grey-palette, 900);
+$dark-accent: mat.define-palette(mat.$grey-palette);
 $dark-theme: mat.define-dark-theme((
   color: (
     primary: $dark-primary,
@@ -22,13 +23,9 @@ $dark-theme: mat.define-dark-theme((
 ));
 
 //Apply dark theme by default
-//@include mat.core-theme($dark-theme);
-//@include mat.button-theme($dark-theme);
 @include mat.all-component-themes($dark-theme);
 
 //Switch to light theme only when .alternative-theme class is applied
 .alternative-theme {
-  //@include mat.core-color($light-theme);
-  //@include mat.button-color($light-theme);
   @include mat.all-component-themes($light-theme);
 }

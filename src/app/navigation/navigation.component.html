@@ -10,9 +10,14 @@
 
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/" (click)="drawer.toggle()" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Menu</a>
-      <a mat-list-item routerLink="/404" (click)="drawer.toggle()" routerLinkActive="active-link">Page erreur</a>
-      <a mat-list-item routerLink="/dhfjshkg" (click)="drawer.toggle()" routerLinkActive="active-link">test bidon</a>
+      <a mat-list-item routerLink="/" (click)="drawer.toggle()"
+         routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+         [id]="currentTheme ? 'light': 'dark'">Menu</a>
+      <a mat-list-item routerLink="/404" (click)="drawer.toggle()" routerLinkActive="active-link" [id]="currentTheme ? 'light': 'dark'">Page erreur</a>
+      <a mat-list-item routerLink="/dhfjshkg" (click)="drawer.toggle()" routerLinkActive="active-link" [id]="currentTheme ? 'light': 'dark'">test bidon</a>
+
+      <a mat-list-item (click)="switchTheme(); drawer.toggle()" [class.hidden]="currentTheme" id="anchorSun">Change to light theme <mat-icon class="themeSwitcher" aria-hidden="false" fontIcon="brightness_7"></mat-icon></a>
+      <a mat-list-item (click)="switchTheme(); drawer.toggle()" [class.hidden]="!currentTheme" id="anchorMoon">Change to dark theme <mat-icon class="themeSwitcher" aria-hidden="false" fontIcon="brightness_3"></mat-icon></a>
     </mat-nav-list>
 
   </mat-sidenav>
@@ -29,15 +34,18 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
 
-      <span>Endless Journey World</span>
+      <span class="title">Endless Journey World</span>
       <span class="spacer"></span>
 
       <div [class.hidden]="isHandset$ | async">
-        <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Menu</a>
-        <a mat-button routerLink="/404" routerLinkActive="active-link">Page erreur</a>
-        <a mat-button routerLink="/dhfjshkg" routerLinkActive="active-link">test bidon</a>
-        <mat-icon [class.hidden]="!currentTheme" (click)="switchTheme()" aria-hidden="false" aria-label="Example home icon" fontIcon="brightness_3"></mat-icon>
-        <mat-icon [class.hidden]="currentTheme" (click)="switchTheme()" aria-hidden="false" aria-label="Example home icon" fontIcon="brightness_7"></mat-icon>
+        <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" [id]="currentTheme ? 'light': 'dark'">Menu</a>
+        <a mat-button routerLink="/404" routerLinkActive="active-link" [id]="currentTheme ? 'light': 'dark'">Page erreur</a>
+        <a mat-button routerLink="/dhfjshkg" routerLinkActive="active-link" [id]="currentTheme ? 'light': 'dark'">test bidon</a>
+
+        <button type="button" aria-label="Toggle Theme" mat-icon-button (click)="switchTheme()">
+          <mat-icon class="themeSwitcher" id="moon" [class.hidden]="!currentTheme" aria-hidden="false" fontIcon="brightness_3"></mat-icon>
+          <mat-icon class="themeSwitcher" id="sun" [class.hidden]="currentTheme" aria-hidden="false" fontIcon="brightness_7"></mat-icon>
+        </button>
       </div>
 
 
