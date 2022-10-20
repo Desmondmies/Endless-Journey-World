@@ -1,0 +1,18 @@
+.active-link {
+  color: #04AA6D; /* Add an active/current color */
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.hidden {
+  display: none;
+}

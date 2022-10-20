@@ -16,13 +16,15 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    ErrorComponent
+    ErrorComponent,
+    FooterIconbarComponent
   ],
   imports: [
     BrowserModule,
