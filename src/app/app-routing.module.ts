@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: '', component: DashboardComponent },
+      { path: '', component: ErrorComponent },
       { path: '404', component: ErrorComponent },
       { path: '**', redirectTo: '404' }
     ]

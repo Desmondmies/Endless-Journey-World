@@ -1,4 +1,11 @@
+<!--
 <div [class.alternative-theme]="isAlternativeTheme">
   <app-navigation (switchThemeEvent)="switchTheme($event)"></app-navigation>
+  <p *ngIf="isHandset$ | async" >HFJKHFJK</p>
 </div>
+-->
 
+<div class="base-container">
+  <router-outlet></router-outlet>
+  <app-footer-iconbar [isHandset]="isHandset$ | async"></app-footer-iconbar>
+</div>

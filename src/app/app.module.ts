@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconbar.component';
+import { CategoryCardComponent } from './components/category-card/category-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconb
     NavigationComponent,
     DashboardComponent,
     ErrorComponent,
-    FooterIconbarComponent
+    FooterIconbarComponent,
+    CategoryCardComponent
   ],
   imports: [
     BrowserModule,
