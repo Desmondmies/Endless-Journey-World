@@ -1,0 +1,29 @@
+<div class="home-page">
+
+  <div class="cat-card-grid">
+    <app-category-card
+      categoryName="Froid Éternel"
+      imgPath="/assets/img/iceland.png"
+      catIcon="ac_unit"
+      [subtitleDay]="globals.json.FE_jour"
+      onClickRoutes="/froid-eternel"
+    ></app-category-card>
+
+    <app-category-card
+      categoryName="Pilier de l'Univers"
+      imgPath="/assets/img/ice-boat.png"
+      catIcon="home"
+      [subtitleDay]="globals.json.FE_jour"
+      onClickRoutes="/pilier-univers"
+    ></app-category-card>
+
+    <app-category-card
+      categoryName="Profondeur Abyssale"
+      imgPath="/assets/img/moon-cave.png"
+      catIcon="ac_unit"
+      [subtitleDay]="globals.json.FE_jour"
+      onClickRoutes="/profondeur-abyssale"
+    ></app-category-card>
+  </div>
+
+</div>

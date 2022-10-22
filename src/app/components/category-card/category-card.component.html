@@ -1,3 +1,11 @@
 <div class="cat-card">
-  <img src="{{imgPath}}" alt="Card Image">
+  <a [href]="onClickRoutes">
+    <img src="{{imgPath}}" alt="Card Image">
+    <mat-icon class="icon-center">{{catIcon}}</mat-icon>
+    <a class="title">{{categoryName}}</a>
+    <span class="subtitle">
+      <a>Jour&nbsp;{{subtitleDay}}</a>
+      <!-- <app-dot-icon Radius="10px" Color="rgba(255, 255, 255, 0.55)"></app-dot-icon> -->
+    </span>
+  </a>
 </div>

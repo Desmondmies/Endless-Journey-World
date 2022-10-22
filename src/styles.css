@@ -23,3 +23,7 @@ body::-webkit-scrollbar {
   background: transparent;
   font-family: 'Product Sans', sans-serif;
 }
+
+a:link, a:visited, a:focus {
+  color: white;
+}

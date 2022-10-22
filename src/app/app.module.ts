@@ -18,6 +18,9 @@ import { ErrorComponent } from './components/error/error.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconbar.component';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
+import { DotIconComponent } from './components/dot-icon/dot-icon.component';
+import {Globals} from "./_GLOBAL/globals";
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { CategoryCardComponent } from './components/category-card/category-card.
     DashboardComponent,
     ErrorComponent,
     FooterIconbarComponent,
-    CategoryCardComponent
+    CategoryCardComponent,
+    DotIconComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,7 @@ import { CategoryCardComponent } from './components/category-card/category-card.
     MatMenuModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
