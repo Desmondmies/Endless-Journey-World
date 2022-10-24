@@ -5,6 +5,7 @@
   align-items: center;
 }
 
+/*
 .home-page a {
   font-size: clamp(2rem, 4vw, 5rem);
 }
@@ -15,6 +16,7 @@
   width: 80vw;
   margin-top: 3vh;
 }
+ */
 
 .home-page-grid {
   height: auto;

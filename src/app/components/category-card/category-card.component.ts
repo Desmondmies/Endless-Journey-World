@@ -7,11 +7,7 @@ import {Component, Input} from '@angular/core';
 })
 export class CategoryCardComponent{
 
-  @Input() public imgPath : string = "";
-  @Input() public categoryName : string = "";
-  @Input() public onClickRoutes : string = "";
-  @Input() public catIcon : string = "";
-  @Input() public subtitleDay : string = "";
+  @Input() public categoryData : any;
 
   constructor() { }
 }

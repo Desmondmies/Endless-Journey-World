@@ -1,4 +1,44 @@
 {
   "TITLE" : "Endless Journey World",
-  "FE_jour": "40"
+
+  "SEASONS": [
+    {
+      "route": "iceberg-de-la-verite",
+      "name": "L'Iceberg de la Vérité",
+      "day": 35,
+      "imagePath": "/assets/img/iceland.png",
+      "icon": "ac_unit",
+      "entries": [
+        {
+          "day": 11,
+          "images": [ "", "", "" ],
+          "text": ""
+        },
+        {
+          "day": 31,
+          "images": [ "", "", "" ],
+          "text": ""
+        },
+        {
+          "day": 41,
+          "images": [ "", "", "" ],
+          "text": ""
+        }
+      ]
+    },
+    {
+      "route": "pilier-univers",
+      "name": "Pilier de l'Univers",
+      "day": 13,
+      "imagePath": "/assets/img/ice-boat.png",
+      "icon": "home",
+      "entries": [
+        {
+          "day": 5,
+          "images": [ "", "", "" ],
+          "text": ""
+        }
+      ]
+    }
+  ]
 }

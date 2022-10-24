@@ -21,6 +21,8 @@ import { CategoryCardComponent } from './components/category-card/category-card.
 import { DotIconComponent } from './components/dot-icon/dot-icon.component';
 import {Globals} from "./_GLOBAL/globals";
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { HeaderComponent } from './components/header/header.component';
+import { EntriesPageComponent } from './components/entries-page/entries-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     FooterIconbarComponent,
     CategoryCardComponent,
     DotIconComponent,
-    HomePageComponent
+    HomePageComponent,
+    HeaderComponent,
+    EntriesPageComponent
   ],
   imports: [
     BrowserModule,
