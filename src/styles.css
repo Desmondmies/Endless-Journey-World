@@ -2,7 +2,6 @@
 
 html, body { height: 100%; }
 body {
-  margin: 0;
   /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -22,6 +21,7 @@ body::-webkit-scrollbar {
   vertical-align: baseline;
   background: transparent;
   font-family: 'Product Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 a:link, a:visited, a:focus {

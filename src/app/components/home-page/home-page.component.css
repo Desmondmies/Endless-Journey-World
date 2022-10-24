@@ -1,7 +1,45 @@
 .home-page {
-
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cat-card-grid {
-  display: flex;
+.home-page a {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.rounded-line-break {
+  border-top: .2rem solid white;
+  border-radius: 2rem;
+  width: 80vw;
+  margin-top: 3vh;
+}
+
+.home-page-grid {
+  height: auto;
+  min-height: 150vh !important;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 0fr);
+  row-gap: 3vh;
+  column-gap: 3vh;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+@media only screen and (max-width: 1060px) {
+  .home-page-grid {
+    grid-template-columns: repeat(2, 0fr);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home-page-grid {
+    grid-template-columns: repeat(1, 0fr);
+  }
 }

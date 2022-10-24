@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Globals} from "../../_GLOBAL/globals";
 
-
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
