@@ -1,8 +1,0 @@
-.error-page {
-  color: white;
-  height: clamp(10rem, 88vh, 89rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.75rem;
-}
