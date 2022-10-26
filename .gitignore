@@ -3,6 +3,10 @@
 
 !.gitignore
 !README.md
-
-# Compiled output
-!/dist/endless-journey-world/*
+!*.txt
+!*.ico
+!/assets
+!/assets/*
+!*.html
+!*.js
+!*.css
