@@ -1,7 +1,20 @@
 <div class="entries-page">
-  <p>entries-page works! {{id}}</p>
+  <!-- <p>entries-page works! {{id}}</p>
 
   <ul>
     <li *ngFor="let entry of entries">{{entry.day}}</li>
   </ul>
+
+  -->
+  <p>{{name}}</p>
+  <div class="entries-page-grid">
+
+    <app-entry-card
+      *ngFor="let entry of entries"
+      [entryData]="entry"
+      [entryName]="name"
+    ></app-entry-card>
+
+  </div>
+
 </div>

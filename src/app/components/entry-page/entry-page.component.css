@@ -1,0 +1,127 @@
+.entry-page {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  font-size: 1.3rem;
+  margin: 5vh 10vw 5vh 10vw;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 520px) {
+  .entry-page {
+    margin: 5vh 2vw 5vh 2vw;
+  }
+}
+
+h2 {
+  align-self: flex-start;
+  font-size: 2.3rem;
+}
+
+.day-title p {
+  font-size: 1.1rem;
+  margin-left: 0.2vw;
+  margin-top: 0.5vh;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-info button {
+  color: white;
+  font-size: 1.3rem;
+  border: 0.13rem solid;
+  padding: 1vh 1vw 1vh 1vw;
+  cursor: pointer;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 770px) {
+  .top-info button {
+    font-size: 1.1rem;
+    padding: 1vh 2vw 1vh 2vw;
+  }
+}
+
+/*
+@media only screen and (max-width: 1210px) {
+  .top-info button {
+    padding: 0.75vh 1vw 0.75vh 1vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .top-info button {
+    padding: 0.5vh 1.5vw 0.5vh 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-info button {
+    font-size: 0.87rem;
+    padding: 0.7vh 2vw 0.7vh 2vw;
+  }
+}
+
+ */
+
+article {
+  overflow-wrap: break-word;
+  margin: 7vh 10vw 7vh 10vw;
+  white-space: pre-line;
+}
+
+@media only screen and (max-width: 770px) {
+  article {
+    margin: 7vh 2vw 7vh 2vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  article {
+    margin: 4vh 0 7vh 0;
+  }
+}
+
+.img-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 80vh;
+  top: 0;
+  margin-top: 43vh;
+}
+
+img{
+  width: 60vw;
+  mask-position: center;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 3%, rgba(0, 0, 0) 43%), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 3%, rgba(0, 0, 0) 63%);
+}
+
+@media only screen and (max-width: 970px) {
+  img {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 97vw;
+  }
+}

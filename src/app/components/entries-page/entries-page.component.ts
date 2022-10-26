@@ -9,18 +9,18 @@ import {map} from "rxjs/operators";
 })
 export class EntriesPageComponent implements OnInit {
 
-  id: string | null = "";
   entries: any;
+  name: any;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get('id');
 
     this.route.paramMap
       .pipe( map(() => window.history.state) )
       .subscribe( res => {
         this.entries = res['entries'];
+        this.name = res['name'];
       })
 
     if (this.entries == null)

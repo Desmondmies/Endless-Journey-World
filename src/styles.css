@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  font-family: 'Product Sans', sans-serif;
+  font-family: 'Product Sans', Arial, "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
 

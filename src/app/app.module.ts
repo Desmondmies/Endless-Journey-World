@@ -13,7 +13,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavigationComponent } from './navigation/navigation.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconbar.component';
@@ -23,19 +22,22 @@ import {Globals} from "./_GLOBAL/globals";
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EntriesPageComponent } from './components/entries-page/entries-page.component';
+import { EntryCardComponent } from './components/entry-card/entry-card.component';
+import { EntryPageComponent } from './components/entry-page/entry-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    DashboardComponent,
     ErrorComponent,
     FooterIconbarComponent,
     CategoryCardComponent,
     DotIconComponent,
     HomePageComponent,
     HeaderComponent,
-    EntriesPageComponent
+    EntriesPageComponent,
+    EntryCardComponent,
+    EntryPageComponent
   ],
   imports: [
     BrowserModule,

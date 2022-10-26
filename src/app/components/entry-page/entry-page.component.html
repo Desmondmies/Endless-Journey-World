@@ -1,0 +1,38 @@
+<div class="entry-page"
+     style="min-height: calc( 210vh * {{entry.images.length}}) !important;"
+>
+  <div class="top-info">
+    <div class="day-title">
+      <h2>JOUR {{entry.day}}</h2>
+      <p>{{entryName}}</p>
+    </div>
+    <button onclick="history.back()">BACK</button>
+  </div>
+
+  <article>
+    {{entry.text}}
+  </article>
+
+  <div class="img-list">
+    <img
+      *ngFor="let img of entry.images"
+      src="/assets/img/{{img}}"
+      alt="Entry Background Image"
+    >
+  </div>
+  <!--
+  <div class="wrapper-outer">
+    <div class="wrapper">
+      <div class="parallax-section" *ngFor="let img of entry.images">
+        <div class="parallax-bg" style="background-image: url('/assets/img/{{img}}');">
+          <img
+            src="/assets/img/{{img}}"
+            alt="Entry Background Image"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+</div>

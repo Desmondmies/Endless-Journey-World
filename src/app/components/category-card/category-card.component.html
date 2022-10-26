@@ -1,6 +1,6 @@
 <div class="cat-card">
-  <a [routerLink]="['/entries',categoryData.route]" [state]="{entries: categoryData.entries }">
-    <img src="{{categoryData.imagePath}}" alt="Card Image">
+  <a [routerLink]="['/entries',categoryData.route]" [state]="{entries: categoryData.entries, name: categoryData.name }">
+    <img src="/assets/img/{{categoryData.imagePath}}" alt="Card Image">
     <mat-icon class="icon-center">{{categoryData.icon}}</mat-icon>
     <a class="title">{{categoryData.name}}</a>
     <span class="subtitle">
