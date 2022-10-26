@@ -44,34 +44,17 @@ h2 {
   height: fit-content;
 }
 
+.top-info button:hover {
+  background-color: white;
+  color: black;
+}
+
 @media only screen and (max-width: 770px) {
   .top-info button {
     font-size: 1.1rem;
     padding: 1vh 2vw 1vh 2vw;
   }
 }
-
-/*
-@media only screen and (max-width: 1210px) {
-  .top-info button {
-    padding: 0.75vh 1vw 0.75vh 1vw;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .top-info button {
-    padding: 0.5vh 1.5vw 0.5vh 1.5vw;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .top-info button {
-    font-size: 0.87rem;
-    padding: 0.7vh 2vw 0.7vh 2vw;
-  }
-}
-
- */
 
 article {
   overflow-wrap: break-word;

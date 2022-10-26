@@ -1,7 +1,7 @@
 .entry-card {
   position: relative;
   width: clamp(19rem, 25vw, 30rem);
-  height: 7vh;
+  height: clamp(3.5rem, 7vh, 10rem);
   overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
   transform: translate(0%, -40%);
   z-index: -1;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0) 100%);
-  transition: mask-image 0.3s ease-out;
+  transition: mask-image 0.3s ease-out, transform 0.1s ease-in-out;
 }
 
 .entry-card .entryTitle {
@@ -19,4 +19,14 @@
   bottom: 0.85rem;
   left: 0;
   font-size: 2rem;
+  transition: transform 0.2s ease-out;
+}
+
+.entry-card:hover img{
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0) 100%);
+  transform: translate(0%, -40%) scale(1.2);
+}
+
+.entry-card:hover .entryTitle{
+  transform: translate(1rem, 0);
 }

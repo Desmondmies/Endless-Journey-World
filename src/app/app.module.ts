@@ -12,7 +12,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { NavigationComponent } from './navigation/navigation.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterIconbarComponent } from './components/footer-iconbar/footer-iconbar.component';
@@ -28,7 +27,6 @@ import { EntryPageComponent } from './components/entry-page/entry-page.component
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
     ErrorComponent,
     FooterIconbarComponent,
     CategoryCardComponent,
