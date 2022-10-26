@@ -10,3 +10,6 @@
 !*.html
 !*.js
 !*.css
+
+!/docs
+!/docs/*
