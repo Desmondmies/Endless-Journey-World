@@ -1,6 +1,7 @@
 #block everything
 /*
 
+#except git files
 !.gitignore
 !README.md
 
